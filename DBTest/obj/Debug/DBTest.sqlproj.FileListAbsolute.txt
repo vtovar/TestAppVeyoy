@@ -1,9 +1,0 @@
-C:\GasBuddyDBs\MyFirstProject\TestAppVeyor\DBTest\bin\Debug\DBTest.dacpac
-C:\GasBuddyDBs\MyFirstProject\TestAppVeyor\DBTest\obj\Debug\Model.xml
-C:\GasBuddyDBs\MyFirstProject\TestAppVeyor\DBTest\obj\Debug\refactor.xml
-C:\GasBuddyDBs\MyFirstProject\TestAppVeyor\DBTest\obj\Debug\postdeploy.sql
-C:\GasBuddyDBs\MyFirstProject\TestAppVeyor\DBTest\obj\Debug\predeploy.sql
-C:\GasBuddyDBs\MyFirstProject\TestAppVeyor\DBTest\obj\Debug\DBTest.dll
-C:\GasBuddyDBs\MyFirstProject\TestAppVeyor\DBTest\obj\Debug\DBTest.pdb
-C:\GasBuddyDBs\MyFirstProject\TestAppVeyor\DBTest\bin\Debug\DBTest.dll
-C:\GasBuddyDBs\MyFirstProject\TestAppVeyor\DBTest\bin\Debug\DBTest.pdb
