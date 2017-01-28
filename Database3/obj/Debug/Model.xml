@@ -11,15 +11,15 @@
 			<Metadata Name="CompatibilityMode" Value="120" />
 		</CustomData>
 		<CustomData Category="Reference" Type="SqlSchema">
-			<Metadata Name="FileName" Value="C:\USERS\VERON\ONEDRIVE\DOCUMENTOS\GITHUB\TESTAPPVEYOY\DATABASE2\BIN\DEBUG\DATABASE2.DACPAC" />
-			<Metadata Name="LogicalName" Value="Database2.dacpac" />
-			<Metadata Name="ExternalParts" Value="[$(Database2)]" />
-			<Metadata Name="SuppressMissingDependenciesErrors" Value="False" />
-		</CustomData>
-		<CustomData Category="Reference" Type="SqlSchema">
 			<Metadata Name="FileName" Value="C:\USERS\VERON\ONEDRIVE\DOCUMENTOS\GITHUB\TESTAPPVEYOY\DBTEST\BIN\DEBUG\DBTEST.DACPAC" />
 			<Metadata Name="LogicalName" Value="DBTest.dacpac" />
 			<Metadata Name="ExternalParts" Value="[$(DBTest)]" />
+			<Metadata Name="SuppressMissingDependenciesErrors" Value="False" />
+		</CustomData>
+		<CustomData Category="Reference" Type="SqlSchema">
+			<Metadata Name="FileName" Value="C:\USERS\VERON\ONEDRIVE\DOCUMENTOS\GITHUB\TESTAPPVEYOY\DATABASE2\BIN\DEBUG\DATABASE2.DACPAC" />
+			<Metadata Name="LogicalName" Value="Database2.dacpac" />
+			<Metadata Name="ExternalParts" Value="[$(Database2)]" />
 			<Metadata Name="SuppressMissingDependenciesErrors" Value="False" />
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
