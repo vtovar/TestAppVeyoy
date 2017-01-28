@@ -1,0 +1,23 @@
+version: 1.0.{build}
+image: Visual Studio 2015
+services: mssql2014
+environment:
+  access_token:
+    secure: Rmjf4w2B+w1RE1cfpw4BNYzcOLo6tK/LHsYAOZW2EfNm/Rts16ggjG9PX3lH1Cdi
+build:
+  project: DBTest\DBTest.sln
+  publish_wap: true
+  verbosity: minimal
+on_success:
+- git config --global credential.helper store
+- ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+- git config --global user.email "vero.tovarm@gmail.com"
+- git config --global user.name "Veronica Tovar"
+- git add -A
+- git commit -a -m "Commit from AppVeyor"
+- git push
+after_build:
+- cmd: sqlpackage.exe /a:DeployReport /sf:"DBTest/bin/debug/DBTest.dacpac" /tcs:"Server=(local)\SQL2014;Database=DBTest;" /op:"DBTest/bin/debug/DBTest_DeploymentReport.xml"
+artifacts:
+- path: DBTest\bin\Debug\
+  name: DBTest.dacpac
