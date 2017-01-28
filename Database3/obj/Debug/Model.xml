@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSchemaModel FileFormatVersion="1.2" SchemaVersion="2.4" DspName="Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider" CollationLcid="1033" CollationCaseSensitive="False" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+	<Header>
+		<CustomData Category="AnsiNulls">
+			<Metadata Name="AnsiNulls" Value="True" />
+		</CustomData>
+		<CustomData Category="QuotedIdentifier">
+			<Metadata Name="QuotedIdentifier" Value="True" />
+		</CustomData>
+		<CustomData Category="CompatibilityMode">
+			<Metadata Name="CompatibilityMode" Value="120" />
+		</CustomData>
+		<CustomData Category="Reference" Type="SqlSchema">
+			<Metadata Name="FileName" Value="C:\USERS\VERON\ONEDRIVE\DOCUMENTOS\GITHUB\TESTAPPVEYOY\DATABASE2\BIN\DEBUG\DATABASE2.DACPAC" />
+			<Metadata Name="LogicalName" Value="Database2.dacpac" />
+			<Metadata Name="ExternalParts" Value="[$(Database2)]" />
+			<Metadata Name="SuppressMissingDependenciesErrors" Value="False" />
+		</CustomData>
+		<CustomData Category="Reference" Type="SqlSchema">
+			<Metadata Name="FileName" Value="C:\USERS\VERON\ONEDRIVE\DOCUMENTOS\GITHUB\TESTAPPVEYOY\DBTEST\BIN\DEBUG\DBTEST.DACPAC" />
+			<Metadata Name="LogicalName" Value="DBTest.dacpac" />
+			<Metadata Name="ExternalParts" Value="[$(DBTest)]" />
+			<Metadata Name="SuppressMissingDependenciesErrors" Value="False" />
+		</CustomData>
+		<CustomData Category="Reference" Type="Assembly">
+			<Metadata Name="LogicalName" Value="Database3.dll" />
+			<Metadata Name="FileName" Value="C:\USERS\VERON\ONEDRIVE\DOCUMENTOS\GITHUB\TESTAPPVEYOY\DATABASE3\OBJ\DEBUG\DATABASE3.DLL" />
+			<Metadata Name="AssemblyName" Value="Database3" />
+			<Metadata Name="PermissionSet" Value="SAFE" />
+			<Metadata Name="Owner" Value="" />
+			<Metadata Name="GenerateSqlClrDdl" Value="True" />
+			<Metadata Name="IsVisible" Value="True" />
+			<Metadata Name="IsModelAware" Value="True" />
+			<Metadata Name="SkipCreationIfEmpty" Value="True" />
+			<Metadata Name="AssemblySymbolsName" Value="C:\Users\veron\OneDrive\Documentos\GitHub\TestAppVeyoy\Database3\obj\Debug\Database3.pdb" />
+		</CustomData>
+		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable">
+			<Metadata Name="Database2" Value="" />
+			<Metadata Name="DBTest" Value="" />
+		</CustomData>
+	</Header>
+	<Model>
+		<Element Type="SqlDatabaseOptions">
+			<Property Name="Collation" Value="SQL_Latin1_General_CP1_CI_AS" />
+			<Property Name="IsAnsiNullDefaultOn" Value="True" />
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="IsAnsiWarningsOn" Value="True" />
+			<Property Name="IsArithAbortOn" Value="True" />
+			<Property Name="IsConcatNullYieldsNullOn" Value="True" />
+			<Property Name="IsTornPageProtectionOn" Value="False" />
+			<Property Name="IsFullTextEnabled" Value="True" />
+			<Property Name="PageVerifyMode" Value="3" />
+			<Property Name="DefaultLanguage" Value="" />
+			<Property Name="DefaultFullTextLanguage" Value="" />
+			<Relationship Name="DefaultFilegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[ProcedureExternalRef2]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	SELECT * from [$(DBTest)].[dbo].[Users] t1
+	INNER JOIN [$(Database2)].[dbo].[Cards] t2
+	ON t1.Id = t2.Id;
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References ExternalSource="DBTest.dacpac" Name="[$(DBTest)]|[dbo].[Users]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="Database2.dacpac" Name="[$(Database2)]|[dbo].[Cards]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="DBTest.dacpac" Name="[$(DBTest)]|[dbo].[Users].[Id]" />
+				</Entry>
+				<Entry>
+					<References ExternalSource="Database2.dacpac" Name="[$(Database2)]|[dbo].[Cards].[Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="172" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[ProcedureExternalRef2]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+	</Model>
+</DataSchemaModel>

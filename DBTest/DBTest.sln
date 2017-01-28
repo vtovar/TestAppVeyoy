@@ -7,7 +7,7 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DBTest", "DBTest.sqlproj", 
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database2", "..\Database2\Database2.sqlproj", "{DBB4F1B3-2442-4C57-A451-4F3B2B241B1E}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database3", "Database3\Database3.sqlproj", "{4B51DEC7-9D25-49E5-9D62-6E8931B3ABCE}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database3", "..\Database3\Database3.sqlproj", "{4B51DEC7-9D25-49E5-9D62-6E8931B3ABCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
