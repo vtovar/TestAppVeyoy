@@ -66,5 +66,6 @@
     <Build Include="dbo\Tables\Users.sql" />
     <Build Include="dbo\Stored Procedures\GetAllUsers.sql" />
     <Build Include="dbo\Views\AllUsers.sql" />
+    <Build Include="dbo\Tables\Cities.sql" />
   </ItemGroup>
 </Project>

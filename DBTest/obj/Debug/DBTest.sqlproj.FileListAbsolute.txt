@@ -3,3 +3,7 @@ C:\Users\veron\OneDrive\Documentos\GitHub\TestAppVeyoy\DBTest\bin\Debug\DBTest.d
 C:\Users\veron\OneDrive\Documentos\GitHub\TestAppVeyoy\DBTest\bin\Debug\DBTest.pdb
 C:\Users\veron\OneDrive\Documentos\GitHub\TestAppVeyoy\DBTest\obj\Debug\DBTest.dll
 C:\Users\veron\OneDrive\Documentos\GitHub\TestAppVeyoy\DBTest\obj\Debug\DBTest.pdb
+C:\Users\veron\OneDrive\Documentos\GitHub\TestAppVeyoy\DBTest\obj\Debug\Model.xml
+C:\Users\veron\OneDrive\Documentos\GitHub\TestAppVeyoy\DBTest\obj\Debug\refactor.xml
+C:\Users\veron\OneDrive\Documentos\GitHub\TestAppVeyoy\DBTest\obj\Debug\postdeploy.sql
+C:\Users\veron\OneDrive\Documentos\GitHub\TestAppVeyoy\DBTest\obj\Debug\predeploy.sql
