@@ -62,8 +62,12 @@
     <Folder Include="dbo\Tables" />
   </ItemGroup>
   <ItemGroup>
-    <ArtifactReference Include="..\DBTest\bin\Debug\DBTest.dacpac">
-      <HintPath>..\DBTest\bin\Debug\DBTest.dacpac</HintPath>
+    <Build Include="dbo\Stored Procedures\ProcedureExternalRef1.sql" />
+    <Build Include="dbo\Tables\Cards.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="..\Dacpacs\DBTest.dacpac">
+      <HintPath>..\Dacpacs\DBTest.dacpac</HintPath>
       <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
       <DatabaseSqlCmdVariable>DBTest</DatabaseSqlCmdVariable>
     </ArtifactReference>
@@ -73,9 +77,5 @@
       <DefaultValue>DBTest</DefaultValue>
       <Value>$(SqlCmdVar__1)</Value>
     </SqlCmdVariable>
-  </ItemGroup>
-  <ItemGroup>
-    <Build Include="dbo\Stored Procedures\ProcedureExternalRef1.sql" />
-    <Build Include="dbo\Tables\Cards.sql" />
   </ItemGroup>
 </Project>
